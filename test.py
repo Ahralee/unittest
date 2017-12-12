@@ -11,6 +11,9 @@ class averageTestCase(unittest.TestCase):
         answer = avg.compute_average([])
         self.assertEqual(answer, 0)
 
+    def test_float_input_number(self):
+        self.assertEqual(avg.compute_average([2.7, 2.8, 4.8, 4.9]), 3)
+
 if __name__ == "__main__":
     unittest.main()
 
